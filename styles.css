@@ -1,0 +1,103 @@
+/* Color Variables */
+
+:root {
+    --softRed: hsl(10, 79%, 65%);
+    --cyan: hsl(186, 34%, 60%);
+    --darkBrown: hsl(25, 47%, 15%);
+    --mediumBrown: hsl(28, 10%, 53%);
+    --cream: hsl(27, 66%, 92%);
+    --veryPaleOrange: hsl(33, 100%, 98%);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*,*::before,*::after {
+    box-sizing: inherit;
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body {
+    background-color: var(--cream);
+}
+
+.main {
+    width: 100%;
+    max-width: 343px;
+    height: 534px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.balance {
+    width: 100%;
+    height: 97px;
+    margin-bottom: 17px;
+    background-color: var(--softRed);
+    color: var(--veryPaleOrange);
+    border-radius: 10px;
+}
+
+.graph-container {
+    background-color: var(--veryPaleOrange);
+    border-radius: 10px;
+}
+
+tbody {
+    display: flex;
+    
+}
+
+
+
+.amount {
+    display: inline-block;
+    width: 20px;
+    height: 0;
+    background-color: blue;
+}
+
+
+/* Set the width and height of the table */
+table {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Set the background color of the table rows */
+  tr {
+    background-color: #f2f2f2;
+  }
+  
+  /* Set the background color of the table cells */
+  td {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 8px;
+  }
+  
+  /* Add a border to the table cells */
+  td {
+    border: 1px solid #ddd;
+  }
+  
+  /* Add a color to the amount cells */
+  td.amount {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  /* Add a height to the amount cells */
+  td.amount {
+    height: item.amount + 'px';
+  }
+  
+  /* Add a width to the amount cells */
+  td.amount {
+    width: 25px;
+  }

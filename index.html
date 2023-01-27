@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Frontend Mentor | Expenses chart component</title>
+
+  </head>
+  <body>
+    <main class="main">
+      <section class="balance">
+        <p>My balance</p>
+        <h1>$921.48</h1>
+        <img src="images/logo.svg" alt="" aria-hidden="true">
+      </section>
+      <section class="graph-container">
+        <h2>Spending - Last 7 days</h2>
+        <table id="data-table">
+          <tbody id="data"></tbody>
+        </table>
+        <div class="line-break"></div>
+        <div class="info-container">
+          <p>Total this month</p>
+          <h3>$478.33</h3>
+          <p>+2.4%</p>
+          <p>from last month</p>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
