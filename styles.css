@@ -41,6 +41,29 @@ body {
     background-color: var(--softRed);
     color: var(--veryPaleOrange);
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.balance-intro {
+    margin: 19px 0px 4px 20px;
+    font-size: 15px;
+    width: 33%;
+}
+
+.balance-amount {
+    position: relative;
+    margin-left: 20px;
+    width: 32%;
+}
+
+.logo {
+    display: inline-block;
+    align-self: flex-end;
+    position: relative;
+    left: -23px;
+    top: -47px;
+    width: 18%;
 }
 
 .graph-container {
@@ -48,11 +71,21 @@ body {
     border-radius: 10px;
 }
 
-tbody {
-    display: flex;
-    
+.graph-header {
+    margin: 5px 0px 0px 10px;
+    color: var(--darkBrown);
+    position: relative;
+    left: 10px;
+    top: 22px;
 }
 
+tbody {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    left: -37px;
+    top: -9px;
+}
 
 
 .amount {
@@ -63,41 +96,44 @@ tbody {
 }
 
 
-/* Set the width and height of the table */
 table {
-    width: 100%;
-    height: 100%;
+    width: 107%;
+    height: 307px;
+    display: inline-block;
+    position: relative;
+    top: 76px;
+    left: 43px;;
   }
   
-  /* Set the background color of the table rows */
-  tr {
-    background-color: #f2f2f2;
-  }
-  
-  /* Set the background color of the table cells */
-  td {
-    background-color: #f2f2f2;
+tr {
+    width: 12%;
+    padding-left: 14px;
+    margin-left: 1px;
+}
+
+td {
     text-align: center;
-    padding: 8px;
-  }
+    color: var(--mediumBrown);
+    font-size: 12px;
+    padding: 9px 2px;
+}
+
+td.amount {
+    width: 116%;
+    background-color: var(--softRed);
+    border-radius: 3px;
+    font-size: 0;
+}
+
+tr:nth-of-type(3) > td.amount {
+    background-color: var(--cyan);
+}
+
+.line-break {
+    border-top: 1px solid var(--cream);
+    position: relative;
+    top: -32px;
+    margin: 0px 22px 0 22px;
+}
+
   
-  /* Add a border to the table cells */
-  td {
-    border: 1px solid #ddd;
-  }
-  
-  /* Add a color to the amount cells */
-  td.amount {
-    background-color: #4CAF50;
-    color: white;
-  }
-  
-  /* Add a height to the amount cells */
-  td.amount {
-    height: item.amount + 'px';
-  }
-  
-  /* Add a width to the amount cells */
-  td.amount {
-    width: 25px;
-  }

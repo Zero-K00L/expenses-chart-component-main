@@ -9,12 +9,16 @@ fetch('data.json')
       var amount = document.createElement("td");
       day.textContent = item.day;
       amount.textContent = item.amount;
-      tr.appendChild(day);
       tr.appendChild(amount);
+      tr.appendChild(day);
       tbody.appendChild(tr);
       day.textContent = item.day;
       amount.textContent = item.amount;
       amount.classList.add('amount');
-      amount.style.height = item.amount + 'px';
+      amount.style.height = item.amount*3 + 'px';
     });
 });  
+
+/* amount.style.height = item.amount*5 + 'px';
+
+amount.style.height = item.amount + 'px'; */
