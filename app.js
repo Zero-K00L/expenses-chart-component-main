@@ -15,7 +15,7 @@ fetch('data.json')
       day.textContent = item.day;
       amount.textContent = item.amount;
       amount.classList.add('amount');
-      amount.style.height = item.amount*3 + 'px';
+      amount.style.height = item.amount*2.85 + 'px';
     });
 });  
 
