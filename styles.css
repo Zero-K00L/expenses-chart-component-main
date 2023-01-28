@@ -69,6 +69,7 @@ body {
 .graph-container {
     background-color: var(--veryPaleOrange);
     border-radius: 10px;
+    height: 79%;
 }
 
 .graph-header {
@@ -84,9 +85,8 @@ tbody {
     align-items: flex-end;
     position: relative;
     left: 16px;
-    top: 97px;
+    top: 64px;
 }
-
 
 .amount {
     display: inline-block;
@@ -94,7 +94,6 @@ tbody {
     height: 0;
     background-color: blue;
 }
-
 
 table {
     width: 107%;
@@ -155,6 +154,7 @@ tr:nth-of-type(3) > td.amount {
     color: var(--mediumBrown);
     margin-bottom: 4px;
     font-size: 15px;
+    margin-left: 1px;
 }
 
 .info-amount {
@@ -186,19 +186,35 @@ tr:nth-of-type(3) > td.amount {
     left: 1px;
 }
 
-.alert-box {
-    
+/* Alert Message for Active */
+
+tr > td:nth-last-of-type(3) {
+    background-color: var(--darkBrown);
+    color: var(--veryPaleOrange);
+    padding: 6px;
+    border-radius: 5px;
+    position: relative;
+    top: -5px;
+    left: -9px;
 }
 
+/* Helper Classes */
 
-
+    .hidden {
+        visibility: hidden;
+    }
 
 
 /* Positioning Days of Week text */
 
-tr:nth-of-type(2) > td:nth-of-type(2) {         /* tue */
+tr:nth-of-type(2) > td:nth-of-type(3) {         /* tue */
     position: relative;
     left: 3px;
+}
+
+tr:nth-of-type(3) > td:nth-of-type(3) {         /* wed */
+    position: relative;
+    left: 1px;
 }
 
 
@@ -207,17 +223,23 @@ tr:nth-of-type(4) > td:nth-last-of-type(1) {    /* thu */
     left: 3px;
 }
 
-tr:nth-of-type(5) > td:nth-of-type(2) {         /* fri */
+tr:nth-of-type(5) > td:nth-of-type(3) {         /* fri */
     position: relative;
-    left: 8px;
+    left: 6px;
 }
 
-tr:nth-of-type(6) > td:nth-of-type(2) {         /* sat */
-    position: relative;
-    left: 4px;
-}
-
-tr:nth-of-type(7) > td:nth-of-type(2) {         /* sun */
+tr:nth-of-type(6) > td:nth-of-type(3) {         /* sat */
     position: relative;
     left: 3px;
 }
+
+tr:nth-of-type(7) > td:nth-of-type(3) {         /* sun */
+    position: relative;
+    left: 2px;
+}
+
+tr:nth-last-of-type(6) > td:nth-of-type(2) {    /* sat  moves bar column */
+    position: relative;
+    left: -1px;
+}
+
