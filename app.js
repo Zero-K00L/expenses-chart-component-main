@@ -21,7 +21,7 @@ fetch('data.json')
       box.textContent = '$' + item.amount;
       box.classList.add('hidden');
       amount.classList.add('amount');
-      amount.style.height = item.amount*2.85 + 'px';  // Sets the height scale for the bar graph columns higher numbers mean larger columns
+      amount.style.height = item.amount*2.85 + 'px';  // Sets the height scale for the bar graph columns, higher numbers mean larger columns
 
       // Gets the elements that have the .amount class and adds an event listener 'click' to them.
       amount.addEventListener('click', function() {
